@@ -15,11 +15,27 @@
 <script> 
 $(document).ready(function(){
 	// animation start
+	$("#aboutbtn").on("click",function(){
+		$(window).scrollTop("503");
+	});
+
   $(".fadein").fadeIn(2000);
   $(".showitems").show(3000);
   $(window).scroll(function() {
 	  if ($(window).scrollTop() >=50) {
 	  $(".aboutMe").show(2000);
+	  }if ($(window).scrollTop() >=400) {
+	  	$(".skillTitle").fadeIn(2000);
+	  	$(".skillsTitle1").delay(200).show(200);
+	  	$(".skillsTitle2").delay(400).show(200);
+	  	$(".skillsTitle3").delay(600).show(200);
+	  	$(".skillsTitle4").delay(800).show(200);
+	  	$(".skillsTitle5").delay(1000).show(200);
+	  	$(".skillsTitle6").delay(1200).show(200);
+	  	$(".skillsTitle7").delay(1400).show(200);
+	  	$(".skillsTitle8").delay(1600).show(200);
+	  	$(".skillsTitle9").delay(1800).show(200);
+	  	$(".skillsTitle10").delay(2000).show(200);
 	  }
 	});
   // animation end
@@ -30,12 +46,14 @@ $(document).ready(function(){
  		$(".aboutMeContent").removeClass("text-h6").addClass("text-h7");
  		$(".aboutMeContentTitle").removeClass("text-h3").addClass("text-h4");
  		$(".avatarSize").width("60vw").height("60vw");
+ 		$(".skilltitle").removeClass("text-h3").addClass("text-h4").css("text-align","center");
  	}else{
  		$(".introContent").addClass("text-h6").removeClass("text-h7");
  		$(".introTitle").addClass("text-h3").removeClass("text-h4");
  		$(".aboutMeContent").addClass("text-h6").removeClass("text-h7");
  		$(".aboutMeContentTitle").addClass("text-h3").removeClass("text-h4");
  		$(".avatarSize").width("35vw").height("35vw");
+ 		$(".skilltitle").addClass("text-h3").removeClass("text-h4").css("text-align","center");
  	}
  	// css-class end
 });
@@ -44,9 +62,9 @@ $(document).ready(function(){
     <v-app>
       <v-main>
 		<v-container fluid class="pa-0 m-0">
-		<v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" size>
+		<v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
 			<v-row align="center" justify="center">
-				<v-col cols="12" sm="12" md="6" xs="6" class="showitems">
+				<v-col cols="12" sm="12" md="6" class="showitems">
 					 <v-card
 					    class="mx-auto cardColor"		
 					    max-width="500"
@@ -70,6 +88,7 @@ $(document).ready(function(){
 					      <v-btn
 					        outlined
 					        text
+					        id="aboutbtn"
 					      >
 					        About Me
 					      </v-btn>
@@ -82,7 +101,7 @@ $(document).ready(function(){
 					    </v-card-actions>
 					  </v-card>
 				</v-col>
-				<v-col cols="12" sm="12" md="6" xs="6" align="center" justify="center" class="fadein">
+				<v-col cols="12" sm="12" md="6" align="center" justify="center" class="fadein">
 					<v-avatar class="avatarSize" size="35vw">
 				      <img
 				        src="image/sean.jpg"
@@ -99,9 +118,9 @@ $(document).ready(function(){
 
 
 
-		<v-container style="height: 300px">
+		<v-container class="aboutMeContainter">
 			<v-row>
-				<v-col cols="12" sm="12" md="12" xs="12" class="aboutMe">
+				<v-col class="aboutMe">
 						<v-list-item three-line>
 					      <v-list-item-content>
 					        <div class="aboutMeContent">
@@ -110,7 +129,7 @@ $(document).ready(function(){
 					        <v-list-item-title class="aboutMeContentTitle">
 					          PERSONAL DETAILS
 					        </v-list-item-title>
-							      <v-list-item-subtitle class="aboutMeContent" style="height: 100px;">I'm Sean Vargas, looking for a position as a Software Developer spesifically on Web Development to contribute and share quality knowledge, work experience for	better career and work environment and to enhance my skill in
+							      <v-list-item-subtitle class="aboutMeContent c1">I'm Sean Vargas, looking for a position as a Software Developer spesifically on Web Development to contribute and share quality knowledge, work experience for	better career and work environment and to enhance my skill in
 											Information Technology field
 										</v-list-item-subtitle>
 					      </v-list-item-content>
@@ -120,6 +139,93 @@ $(document).ready(function(){
 		</v-container>
 
 
+		<v-container class="skillContainer" align="center" justify="center">
+			<p class="skillTitle">
+			    MY SKILLS
+			</p>
+			<v-row>
+				<v-col class="skillsTitle1" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/vuetify.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+	          VUETIFY
+	        </span>
+				</v-col>
+				<v-col class="skillsTitle2" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/vue.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+	          VUE JS
+	        </span>
+				</v-col>
+				<v-col class="skillsTitle3" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/boostrap.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+	          BOOTSTRAP
+	        </span>
+				</v-col>
+				<v-col class="skillsTitle4" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/git.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+	          GIT
+	        </span>
+				</v-col>
+				<v-col class="skillsTitle5" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/laravel.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+						LARAVEL
+					</span>
+				</v-col>
+				<v-col class="skillsTitle6" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/jquery.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+						JQUERY
+					</span>
+				</v-col>
+				<v-col class="skillsTitle7" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/node.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+						NODE JS
+					</span>
+				</v-col>
+				<v-col class="skillsTitle8" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/mysql.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+						MYSQL
+					</span>
+				</v-col>
+				<v-col class="skillsTitle9" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/html.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+						HTML
+					</span>
+				</v-col>
+				<v-col class="skillsTitle10" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/css.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+					CSS
+					</span>
+				</v-col>
+			</v-row>
+		</v-container>
 
 
 
@@ -145,6 +251,24 @@ $(document).ready(function(){
     })
   </script>
   <style>
+  	.skillContainer{
+  		height: 500px;
+  	}
+  	.skillTitle{
+  		display: none;
+  	}
+  	.skillsTitle1, .skillsTitle2, .skillsTitle3, .skillsTitle4, .skillsTitle5, .skillsTitle6, .skillsTitle7, .skillsTitle8, .skillsTitle9, .skillsTitle10{
+  		text-align: center;
+  		font-weight: bold;
+  		font-size: x-large;
+  		display: none;
+  	}
+  	.c1{
+  		height: 100px;
+  	}
+  	.aboutMeContainter{
+  		height: 250px;
+  	}
   	.aboutMe{
   		display: none;
   	}
