@@ -14,8 +14,30 @@
 <body>
 <script> 
 $(document).ready(function(){
+	// animation start
   $(".fadein").fadeIn(2000);
   $(".showitems").show(3000);
+  $(window).scroll(function() {
+	  if ($(window).scrollTop() >=50) {
+	  $(".aboutMe").show(2000);
+	  }
+	});
+  // animation end
+  // css-class start
+ 	if ($(window).width() <= 412) {
+ 		$(".introContent").removeClass("text-h6").addClass("text-h7");
+ 		$(".introTitle").removeClass("text-h3").addClass("text-h4");
+ 		$(".aboutMeContent").removeClass("text-h6").addClass("text-h7");
+ 		$(".aboutMeContentTitle").removeClass("text-h3").addClass("text-h4");
+ 		$(".avatarSize").width("60vw").height("60vw");
+ 	}else{
+ 		$(".introContent").addClass("text-h6").removeClass("text-h7");
+ 		$(".introTitle").addClass("text-h3").removeClass("text-h4");
+ 		$(".aboutMeContent").addClass("text-h6").removeClass("text-h7");
+ 		$(".aboutMeContentTitle").addClass("text-h3").removeClass("text-h4");
+ 		$(".avatarSize").width("35vw").height("35vw");
+ 	}
+ 	// css-class end
 });
 </script> 
   <div id="app" v-cloak>
@@ -32,26 +54,15 @@ $(document).ready(function(){
 					    transition="slide-x-transition"
 					  >
 
-					    <v-list-item three-line  v-if="win >= 413">
+					    <v-list-item three-line>
 					      <v-list-item-content>
-					        <div class="text-h6">
+					        <div class="introContent">
 					          Hi,
 					        </div>
-					        <v-list-item-title class="text-h3">
-					          I'M Sean Russell
+					        <v-list-item-title class="introTitle">
+					          <b>I'm Sean Russell</b>
 					        </v-list-item-title>
-					        <v-list-item-subtitle class="text-h6">A SR,Software Engineer</v-list-item-subtitle>
-					      </v-list-item-content>
-					    </v-list-item>
-					    <v-list-item three-line  v-else>
-					      <v-list-item-content>
-					        <div class="text-h7">
-					          Hi,
-					        </div>
-					        <v-list-item-title class="text-h4">
-					          I'M Sean Russell
-					        </v-list-item-title>
-					        <v-list-item-subtitle class="text-h7">A SR,Software Engineer</v-list-item-subtitle>
+					        <v-list-item-subtitle class="introContent">Senior, Software Engineer</v-list-item-subtitle>
 					      </v-list-item-content>
 					    </v-list-item>
 
@@ -72,13 +83,7 @@ $(document).ready(function(){
 					  </v-card>
 				</v-col>
 				<v-col cols="12" sm="12" md="6" xs="6" align="center" justify="center" class="fadein">
-					<v-avatar v-if="win >= 413" size="35vw">
-				      <img
-				        src="image/sean.jpg"
-				        alt="Sean"
-				      >
-				    </v-avatar>
-				    <v-avatar v-else size="60vw">
+					<v-avatar class="avatarSize" size="35vw">
 				      <img
 				        src="image/sean.jpg"
 				        alt="Sean"
@@ -94,8 +99,24 @@ $(document).ready(function(){
 
 
 
-		<v-container style="height: 1000px;background-color: red">
-			
+		<v-container style="height: 300px">
+			<v-row>
+				<v-col cols="12" sm="12" md="12" xs="12" class="aboutMe">
+						<v-list-item three-line>
+					      <v-list-item-content>
+					        <div class="aboutMeContent">
+					          ABOUT ME
+					        </div>
+					        <v-list-item-title class="aboutMeContentTitle">
+					          PERSONAL DETAILS
+					        </v-list-item-title>
+							      <v-list-item-subtitle class="aboutMeContent" style="height: 100px;">I'm Sean Vargas, looking for a position as a Software Developer spesifically on Web Development to contribute and share quality knowledge, work experience for	better career and work environment and to enhance my skill in
+											Information Technology field
+										</v-list-item-subtitle>
+					      </v-list-item-content>
+					    </v-list-item>
+				</v-col>
+			</v-row>
 		</v-container>
 
 
@@ -124,11 +145,14 @@ $(document).ready(function(){
     })
   </script>
   <style>
+  	.aboutMe{
+  		display: none;
+  	}
   	.fadein{
-  		display: none
+  		display: none;
   	}
   	.showitems{
-  		display: none
+  		display: none;
   	}
   	.cardColor {
 	   background-color: rgba(255, 255, 255, 0.0) !important;
