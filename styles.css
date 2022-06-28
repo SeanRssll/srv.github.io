@@ -1,0 +1,37 @@
+  		[v-cloak]{
+  		display: none;
+		}
+		.MainContainer{
+			height: 3000px;
+		}
+
+		.skillsTitle1, 
+		.skillsTitle2, 
+		.skillsTitle3, 
+		.skillsTitle4, 
+		.skillsTitle5, 
+		.skillsTitle6, 
+		.skillsTitle7, 
+		.skillsTitle8, 
+		.skillsTitle9, 
+		.skillsTitle10,
+		.skillsTitle11{
+			text-align: center;
+			font-weight: bold;
+			font-size: x-large;
+			display: none;
+		}
+		.c1{
+			height: 100px;
+		}
+		.myprojects,
+		.showitems, 
+		.fadein,
+		.skillTitle, 
+		.aboutMe{
+			display: none;
+		}
+		.cardColor {
+		   background-color: rgba(255, 255, 255, 0.0) !important;
+		   border-color: white !important;
+		}

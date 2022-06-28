@@ -5,7 +5,8 @@
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./style-script/mystyle.css">
+ 	<link rel="stylesheet" type="text/css" href="styles.css">
+
   </head>
 <body>
   <div id="app" v-cloak>
@@ -30,7 +31,7 @@
 					        <v-list-item-title class="introTitle">
 					          <b>I'm Sean Russell</b>
 					        </v-list-item-title>
-					        <v-list-item-subtitle class="introContent">Senior, Software Engineer</v-list-item-subtitle>
+					        <v-list-item-subtitle class="introContent">Aspiring Software Engineer</v-list-item-subtitle>
 					      </v-list-item-content>
 					    </v-list-item>
 
@@ -39,14 +40,18 @@
 					        outlined
 					        text
 					        id="aboutbtn"
-					      >
-					        About Me
+					      >About Me
 					      </v-btn>
 					      <v-btn
 					        outlined
 					        text
-					      >
-					        Projects
+					        id="projectbtn"
+					      >Projects
+					      </v-btn>
+					      <v-btn
+					        outlined
+					        text
+					      >Certificates
 					      </v-btn>
 					    </v-card-actions>
 					  </v-card>
@@ -67,7 +72,7 @@
 
 
 
-
+		<div class="MainContainer">
 		<v-container class="aboutMeContainter">
 			<v-row>
 				<v-col class="aboutMe">
@@ -89,7 +94,7 @@
 		</v-container>
 
 
-		<v-container class="skillContainer" align="center" justify="center">
+		<v-container class="skillContainer" align="center" justify="center" >
 			<p class="skillTitle">
 			    MY SKILLS
 			</p>
@@ -103,19 +108,19 @@
 	        </span>
 				</v-col>
 				<v-col class="skillsTitle2" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/vue.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-	          VUE JS
-	        </span>
-				</v-col>
-				<v-col class="skillsTitle3" cols="4" xl="3" md="3" sm="3">
 					<v-img src="image/skills/boostrap.png"
 					aspect-ratio="1"
 					></v-img>
 					<span>
 	          BOOTSTRAP
+	        </span>
+				</v-col>
+				<v-col class="skillsTitle3 " cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/vue.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+	          VUE JS
 	        </span>
 				</v-col>
 				<v-col class="skillsTitle4" cols="4" xl="3" md="3" sm="3">
@@ -142,14 +147,6 @@
 						JQUERY
 					</span>
 				</v-col>
-				<v-col class="skillsTitle7" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/node.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-						NODE JS
-					</span>
-				</v-col>
 				<v-col class="skillsTitle8" cols="4" xl="3" md="3" sm="3">
 					<v-img src="image/skills/mysql.png"
 					aspect-ratio="1"
@@ -162,7 +159,7 @@
 					<v-img src="image/skills/html.png"
 					aspect-ratio="1"
 					></v-img>
-					<span>
+					<span style="position:static;">
 						HTML
 					</span>
 				</v-col>
@@ -174,13 +171,61 @@
 					CSS
 					</span>
 				</v-col>
+				<v-col class="skillsTitle11" cols="4" xl="3" md="3" sm="3">
+					<v-img src="image/skills/axios.png"
+					aspect-ratio="1"
+					></v-img>
+					<span>
+					AXIOS
+					</span>
+				</v-col>
 			</v-row>
 		</v-container>
 
 
 
+		<!-- <v-container style="background-color: red;" fluid>
+			<p class="myprojects">
+			    MY Projects
+			</p>
+			<v-carousel
+		    cycle
+		    height="400"
+		    hide-delimiter-background
+		    show-arrows-on-hover
+		  >
+		    <template v-slot:next="{ on, attrs }">
+		      <v-btn
+		        color="info"
+		        v-on="on"
+		      >Get Code</v-btn>
+		    </template>
+		    <v-carousel-item
+		      v-for="(slide, i) in slides"
+		      :key="i"
+		    >
+		      <v-sheet
+		        :color="colors[i]"
+		        height="100%"
+		      >
+		        <v-row
+		          class="fill-height"
+		          align="center"
+		          justify="center"
+		        >
+		          <div class="text-h2">
+		            {{ slide }} Slide
+		          </div>
+		        </v-row>
+		      </v-sheet>
+		    </v-carousel-item>
+		  </v-carousel>
+		</v-container> -->
 
 
+
+		
+		</div>
 
      </v-main>
     </v-app>
@@ -188,6 +233,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script type="text/javascript" src="./style-script/myscript.js"></script>  
+  <script type="text/javascript" src="jquery.js"></script>
 </body>
 </html>
