@@ -4,12 +4,12 @@
 	    vuetify: new Vuetify(),
 	    data: {
 			images: [
-				{ src: 'image/certificates/Suiterus.jpg', alt: 'Image 1'},
-				{ src: 'image/certificates/Condor.jpg', alt: 'Image 2'},
-				{ src: 'image/certificates/Pcworx.jpg', alt: 'Image 3'},
-				{ src: 'image/certificates/Waltermart.jpg', alt: 'Image 4'},
-				{ src: 'image/certificates/UCC.jpg', alt: 'Image 5'},
-				{ src: 'image/certificates/FEU.jpg', alt: 'Image 6'}
+				{ src: 'image/certificates/Suiterus.jpg', alt: 'Image 1',width:"width: 33vw;align-self: center;"},
+				{ src: 'image/certificates/Condor.jpg', alt: 'Image 2',width:"width: 33vw;align-self: center;"},
+				{ src: 'image/certificates/Pcworx.jpg', alt: 'Image 3',width:"width: 33vw;align-self: center;"},
+				{ src: 'image/certificates/Waltermart.jpg', alt: 'Image 4',width:"width: 33vw;align-self: center;"},
+				{ src: 'image/certificates/UCC.jpg', alt: 'Image 5',width:"width: 33vw;align-self: center;"},
+				{ src: 'image/certificates/FEU.jpg', alt: 'Image 6',width:"width: 60vw;align-self: center;"}
 				// Add more images as needed
 			  ],
             skillset:[

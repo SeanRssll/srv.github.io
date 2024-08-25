@@ -124,19 +124,15 @@
 			<p>
 			    CERTIFICATES
 			</p>
-			<v-row>
-				<v-col >
-					<v-carousel height="50vw"> <!-- Adjust the height of the carousel -->
-						<v-carousel-item
-						  v-for="(image, index) in images"
-						  :key="index"
-						  class="carousel-item"
-						>
-						  <img :src="image.src" :alt="image.alt" class="carousel-image" />
-						</v-carousel-item>
-					  </v-carousel>
-				</v-col>
-			</v-row>
+			<v-carousel height="45vw">
+				<v-carousel-item
+					v-for="(image, index) in images"
+					:key="index"
+					:style="image.width"
+				>
+					<v-img :src="image.src" :alt="image.alt" />
+				</v-carousel-item>
+			</v-carousel>
 		</v-container>
 
 		
