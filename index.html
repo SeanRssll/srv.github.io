@@ -39,18 +39,13 @@
 					      <v-btn
 					        outlined
 					        text
-					        id="aboutbtn"
+							@click="scrollToContainer('about')"
 					      >About Me
 					      </v-btn>
 					      <v-btn
 					        outlined
 					        text
-					        id="projectbtn"
-					      >Projects
-					      </v-btn>
-					      <v-btn
-					        outlined
-					        text
+					        @click="scrollToContainer('mycertificate')"
 					      >Certificates
 					      </v-btn>
 					    </v-card-actions>
@@ -67,13 +62,8 @@
 			</v-row>
 		</v-container>
 
-
-
-
-
-
 		<div class="MainContainer">
-		<v-container class="aboutMeContainter">
+		<v-container class="aboutMeContainter" id="about">
 			<v-row>
 				<v-col class="aboutMe">
 						<v-list-item three-line>
@@ -94,133 +84,63 @@
 		</v-container>
 
 
-		<v-container class="skillContainer" align="center" justify="center" >
+		<v-container class="skillContainer" align="center" justify="center">
 			<p class="skillTitle">
 			    MY SKILLS
 			</p>
+			<v-row class="skill_list">
+				<v-col 
+				v-for="(skills, index) in skillset"
+				:key="index"
+				cols="4"
+				xl="3" 
+				md="3" 
+				sm="3"
+				:class="['skill-item', skills.class]">
+					<v-container class="img-prop">
+						<v-img :src="skills.src"
+						aspect-ratio="1"
+						></v-img>
+						<span>
+							{{ skills.title }}
+						</span>
+					</v-container>
+					<v-container class="level-prop" style="display: none;border: solid;height: 100%;">
+						<span>
+							{{ skills.title }}
+						</span>
+						<v-container>
+						<table style="margin-top:25%;">
+							<tr style="flex-wrap: nowrap" class="tr-data" :data-max="skills.max_level" :data-level="skills.level" >
+							</tr>
+						</table>
+						</v-container>
+						<span><span class="counter"></span>/{{ skills.max_level }}</span>
+					</v-container>
+				</v-col>
+			</v-row>
+		</v-container>
+		<v-container id="mycertificate" class="mycert">
+			<p>
+			    CERTIFICATES
+			</p>
 			<v-row>
-				<v-col class="skillsTitle1" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/vuetify.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-	          VUETIFY
-	        </span>
-				</v-col>
-				<v-col class="skillsTitle2" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/boostrap.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-	          BOOTSTRAP
-	        </span>
-				</v-col>
-				<v-col class="skillsTitle3 " cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/vue.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-	          VUE JS
-	        </span>
-				</v-col>
-				<v-col class="skillsTitle4" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/git.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-	          GIT
-	        </span>
-				</v-col>
-				<v-col class="skillsTitle5" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/laravel.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-						LARAVEL
-					</span>
-				</v-col>
-				<v-col class="skillsTitle6" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/jquery.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-						JQUERY
-					</span>
-				</v-col>
-				<v-col class="skillsTitle8" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/mysql.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-						MYSQL
-					</span>
-				</v-col>
-				<v-col class="skillsTitle9" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/html.png"
-					aspect-ratio="1"
-					></v-img>
-					<span style="position:static;">
-						HTML
-					</span>
-				</v-col>
-				<v-col class="skillsTitle10" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/css.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-					CSS
-					</span>
-				</v-col>
-				<v-col class="skillsTitle11" cols="4" xl="3" md="3" sm="3">
-					<v-img src="image/skills/axios.png"
-					aspect-ratio="1"
-					></v-img>
-					<span>
-					AXIOS
-					</span>
+				<v-col >
+					<v-carousel height="50vw"> <!-- Adjust the height of the carousel -->
+						<v-carousel-item
+						  v-for="(image, index) in images"
+						  :key="index"
+						  class="carousel-item"
+						>
+						  <img :src="image.src" :alt="image.alt" class="carousel-image" />
+						</v-carousel-item>
+					  </v-carousel>
 				</v-col>
 			</v-row>
 		</v-container>
 
-
-
-		<!-- <v-container style="background-color: red;" fluid>
-			<p class="myprojects">
-			    MY Projects
-			</p>
-			<v-carousel
-		    cycle
-		    height="400"
-		    hide-delimiter-background
-		    show-arrows-on-hover
-		  >
-		    <template v-slot:next="{ on, attrs }">
-		      <v-btn
-		        color="info"
-		        v-on="on"
-		      >Get Code</v-btn>
-		    </template>
-		    <v-carousel-item
-		      v-for="(slide, i) in slides"
-		      :key="i"
-		    >
-		      <v-sheet
-		        :color="colors[i]"
-		        height="100%"
-		      >
-		        <v-row
-		          class="fill-height"
-		          align="center"
-		          justify="center"
-		        >
-		          <div class="text-h2">
-		            {{ slide }} Slide
-		          </div>
-		        </v-row>
-		      </v-sheet>
-		    </v-carousel-item>
-		  </v-carousel>
-		</v-container> -->
+		
+		
 
 
 
@@ -233,6 +153,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  
+  <script type="text/javascript" src="vue_script.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
 </body>
 </html>

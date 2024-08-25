@@ -2,9 +2,8 @@
   		display: none;
 		}
 		.MainContainer{
-			height: 3000px;
+			height: 2800px;
 		}
-
 		.skillsTitle1, 
 		.skillsTitle2, 
 		.skillsTitle3, 
@@ -15,7 +14,9 @@
 		.skillsTitle8, 
 		.skillsTitle9, 
 		.skillsTitle10,
-		.skillsTitle11{
+		.skillsTitle11,
+		.skillsTitle12,
+		.skillsTitle13{
 			text-align: center;
 			font-weight: bold;
 			font-size: x-large;
@@ -24,7 +25,8 @@
 		.c1{
 			height: 100px;
 		}
-		.myprojects,
+		
+		.mycert,
 		.showitems, 
 		.fadein,
 		.skillTitle, 
@@ -35,3 +37,29 @@
 		   background-color: rgba(255, 255, 255, 0.0) !important;
 		   border-color: white !important;
 		}
+		.carousel-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		  }
+		.carousel-image{
+			height: 50vw;
+
+		}
+		
+
+
+		/* hover skill */
+		
+		.skill-item:hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.989);
+			background-color: rgba(133, 132, 132, 0.623);
+			z-index: 1000;
+		}
+		.column-style {
+			border: solid .2vw;
+			width: 10vw;
+			height: 5vw;
+		  }
+		
