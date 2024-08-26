@@ -40,7 +40,7 @@
             ]
 	    },methods: {
 			scrollToContainer(data) {
-				const element = document.getElementById(data);;
+				const element = document.getElementById(data);
 				if (element) {
 				element.scrollIntoView({ behavior: 'smooth' });
 				}

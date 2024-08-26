@@ -30,6 +30,7 @@
 		$(".fadein").fadeIn(2000);
 		$(".showitems").show(3000);
 		$(window).scroll(function() {
+			console.log($(window).width());
 		if ($(window).scrollTop() >=50) {
 			$(".aboutMe").show(2000);
 		}if ($(window).scrollTop() >=400) {
@@ -48,6 +49,8 @@
 			$(".skillsTitle12").delay(2400).show(200);
 		}if ($(window).scrollTop() >= 1200) {
 			$(".mycert").fadeIn(200);
+		}if ($(window).scrollTop() >= 1800) {
+			$(".project").fadeIn(200);
 		}
 		});
 	// animation end

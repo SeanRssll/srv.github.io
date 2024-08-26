@@ -2,7 +2,7 @@
   		display: none;
 		}
 		.MainContainer{
-			height: 2800px;
+			height: 4800px;
 		}
 		.skillsTitle1, 
 		.skillsTitle2, 
@@ -25,6 +25,7 @@
 			height: 100px;
 		}
 		
+		.project,
 		.mycert,
 		.showitems, 
 		.fadein,
@@ -119,7 +120,7 @@
 				margin-top: 15vh;
 				align-self: center;
 			}
-		}@media (min-width: 1366px) {
+		}@media (min-width: 1366px){
 			.carousel-image{
 				width: 65vh;
 				align-self: center;
@@ -130,6 +131,10 @@
 			.carousel-image-custom{
 				width:55vw;
 				margin: 10vh;
+				align-self: center;
+			}.carousel-image-portfolio{
+				width: 70vw;
+				margin-top: 15vh;
 				align-self: center;
 			}
 		}
