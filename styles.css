@@ -57,28 +57,79 @@
 		@media (max-width: 400px) {
 			.carousel-image{
 				width: 100vw;
-				margin-top: 30vw;
+				margin-top: 10vh;
 				align-self: center;
 			}
 			.skill-font{
 				font-size: 3vw;
 			}
 			.carousel-image-custom{
-				width: 100vw;
-				margin-top: 50vw;
+				width: 80vw;
+				margin-top: 30vh;
+				align-self: center;
+			}
+			.carousel-image-portfolio{
+				width: 80vw;
+				margin-top: 30vh;
 				align-self: center;
 			}
 		}
-		@media (min-width: 401px) {
+		@media (min-width: 401px) and (max-width: 799px) {
 			.carousel-image{
-				width: 33vw;
+				width: 60vh;
+				align-self: center;
+			}
+			.skill-font{
+				font-size: 3vw;
+			}
+			.carousel-image-custom{
+				width: 90vw;
+				margin-top: 20vh;
+				align-self: center;
+			}
+			.carousel-image-portfolio{
+				width: 80vw;
+				margin-top: 30vh;
+				align-self: center;
+			}
+		}
+		@media (min-width: 800px) and (max-width: 1023px) {
+			.carousel-image{
+				width: 65vh;
+				align-self: center;
+			}
+			.skill-font{
+				font-size: 3vw;
+			}
+			.carousel-image-custom{
+				width: 90vh;
+				margin: 10vh;
+				align-self: center;
+			}
+			.carousel-image-portfolio{
+				width: 80vw;
+				margin-top: 15vh;
+				align-self: center;
+			}
+			
+		}@media (min-width: 1024px) and (max-width: 1365px) {
+			
+			.carousel-image-portfolio{
+				width: 70vw;
+				margin-top: 15vh;
+				align-self: center;
+			}
+		}@media (min-width: 1366px) {
+			.carousel-image{
+				width: 65vh;
 				align-self: center;
 			}
 			.skill-font{
 				font-size: 2vw;
 			}
 			.carousel-image-custom{
-				width:60vw;
+				width:55vw;
+				margin: 10vh;
 				align-self: center;
 			}
 		}

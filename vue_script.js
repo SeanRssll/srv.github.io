@@ -3,13 +3,23 @@
 	    el: '#app',
 	    vuetify: new Vuetify(),
 	    data: {
-			images: [
-				{ src: 'image/certificates/Suiterus.jpg', alt: 'Image 1',width:"carousel-image"},
-				{ src: 'image/certificates/Condor.jpg', alt: 'Image 2',width:"carousel-image"},
-				{ src: 'image/certificates/Pcworx.jpg', alt: 'Image 3',width:"carousel-image"},
-				{ src: 'image/certificates/Waltermart.jpg', alt: 'Image 4',width:"carousel-image"},
-				{ src: 'image/certificates/UCC.jpg', alt: 'Image 5',width:"carousel-image"},
-				{ src: 'image/certificates/FEU.jpg', alt: 'Image 6',width:"carousel-image-custom"}
+            projectImg:[
+                { src: 'image/portfolio/inventory.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/invoice.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/oms.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/patients_record_system.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/online_exam.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/online_exam1.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/online_exam2.png',width:"carousel-image-portfolio"},
+                
+            ],
+			certImages: [
+				{ src: 'image/certificates/Suiterus.jpg',width:"carousel-image"},
+				{ src: 'image/certificates/Condor.jpg',width:"carousel-image"},
+				{ src: 'image/certificates/Pcworx.jpg',width:"carousel-image"},
+				{ src: 'image/certificates/Waltermart.jpg',width:"carousel-image"},
+				{ src: 'image/certificates/UCC.jpg',width:"carousel-image"},
+				{ src: 'image/certificates/FEU.jpg',width:"carousel-image-custom"}
 				// Add more images as needed
 			  ],
             skillset:[

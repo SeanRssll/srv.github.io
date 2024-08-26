@@ -137,7 +137,7 @@
 				</p>
 				<v-carousel height="90vh">
 					<v-carousel-item
-						v-for="(image, index) in images"
+						v-for="(image, index) in certImages"
 						:key="index"
 						:class="image.width";
 					>
@@ -147,6 +147,23 @@
 			</v-container>
 		</v-container>
 
+
+		<v-container id="myprojects">
+			<v-container class="project">
+				<p>
+					PROJECTS
+				</p>
+				<v-carousel height="90vh">
+					<v-carousel-item
+						v-for="(projects, index) in projectImg"
+						:key="index"
+						:class="projects.width";
+					>
+					<v-img :src="projects.src" :alt="projects.alt" />
+					</v-carousel-item>
+				</v-carousel>
+			</v-container>
+		</v-container>
 		
 		
 

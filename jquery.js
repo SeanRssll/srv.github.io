@@ -60,6 +60,7 @@
 			$(".avatarSize").width("60vw").height("60vw");
 			$(".skilltitle").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 			$(".mycert").removeClass("text-h3").addClass("text-h4").css("text-align","center");
+			$(".project").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 		}else{
 			$(".introContent").addClass("text-h6").removeClass("text-h7");
 			$(".introTitle").addClass("text-h3").removeClass("text-h4");
@@ -68,6 +69,7 @@
 			$(".avatarSize").width("35vw").height("35vw");
 			$(".skilltitle").addClass("text-h3").removeClass("text-h4").css("text-align","center");
 			$(".mycert").addClass("text-h3").removeClass("text-h4").css("text-align","center");
+			$(".project").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 		}
 		// css-class end
 	});
