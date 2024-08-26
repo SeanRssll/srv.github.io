@@ -54,4 +54,25 @@
 			width: 10vw;
 			height: 5vw;
 		  }
-		
+		@media (max-width: 400px) {
+			.carousel-image{
+				width: 100vw;
+				margin-top: 30vw;
+				align-self: center;
+			}
+			.carousel-image-custom{
+				width: 100vw;
+				margin-top: 50vw;
+				align-self: center;
+			}
+		}
+		@media (min-width: 401px) {
+			.carousel-image{
+				width: 33vw;
+				align-self: center;
+			}
+			.carousel-image-custom{
+				width:60vw;
+				align-self: center;
+			}
+		}

@@ -133,11 +133,11 @@
 			<p>
 			    CERTIFICATES
 			</p>
-			<v-carousel height="45vw">
+			<v-carousel height="90vh">
 				<v-carousel-item
 					v-for="(image, index) in images"
 					:key="index"
-					:style="image.width"
+					:class="image.width";
 				>
 					<v-img :src="image.src" :alt="image.alt" />
 				</v-carousel-item>

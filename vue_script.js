@@ -4,12 +4,12 @@
 	    vuetify: new Vuetify(),
 	    data: {
 			images: [
-				{ src: 'image/certificates/Suiterus.jpg', alt: 'Image 1',width:"width: 33vw;align-self: center;"},
-				{ src: 'image/certificates/Condor.jpg', alt: 'Image 2',width:"width: 33vw;align-self: center;"},
-				{ src: 'image/certificates/Pcworx.jpg', alt: 'Image 3',width:"width: 33vw;align-self: center;"},
-				{ src: 'image/certificates/Waltermart.jpg', alt: 'Image 4',width:"width: 33vw;align-self: center;"},
-				{ src: 'image/certificates/UCC.jpg', alt: 'Image 5',width:"width: 33vw;align-self: center;"},
-				{ src: 'image/certificates/FEU.jpg', alt: 'Image 6',width:"width: 60vw;align-self: center;"}
+				{ src: 'image/certificates/Suiterus.jpg', alt: 'Image 1',width:"carousel-image"},
+				{ src: 'image/certificates/Condor.jpg', alt: 'Image 2',width:"carousel-image"},
+				{ src: 'image/certificates/Pcworx.jpg', alt: 'Image 3',width:"carousel-image"},
+				{ src: 'image/certificates/Waltermart.jpg', alt: 'Image 4',width:"carousel-image"},
+				{ src: 'image/certificates/UCC.jpg', alt: 'Image 5',width:"carousel-image"},
+				{ src: 'image/certificates/FEU.jpg', alt: 'Image 6',width:"carousel-image-custom"}
 				// Add more images as needed
 			  ],
             skillset:[
