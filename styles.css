@@ -60,6 +60,9 @@
 				margin-top: 30vw;
 				align-self: center;
 			}
+			.skill-font{
+				font-size: 3vw;
+			}
 			.carousel-image-custom{
 				width: 100vw;
 				margin-top: 50vw;
@@ -70,6 +73,9 @@
 			.carousel-image{
 				width: 33vw;
 				align-self: center;
+			}
+			.skill-font{
+				font-size: 2vw;
 			}
 			.carousel-image-custom{
 				width:60vw;

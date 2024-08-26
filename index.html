@@ -110,17 +110,17 @@
 						<v-img :src="skills.src"
 						aspect-ratio="1"
 						></v-img>
-						<span>
+						<span class="skill-font">
 							{{ skills.title }}
 						</span>
 					</v-container>
 					<v-container class="level-prop" style="display: none;border: solid;height: 100%;">
-						<span>
+						<span class="skill-font">
 							{{ skills.title }}
 						</span>
-						<v-container>
+						<v-container style="align-self: center;padding: 0px;">
 						<table style="margin-top:25%;">
-							<tr style="flex-wrap: nowrap" class="tr-data" :data-max="skills.max_level" :data-level="skills.level" >
+							<tr style="flex-wrap: nowrap;" class="tr-data" :data-max="skills.max_level" :data-level="skills.level" >
 							</tr>
 						</table>
 						</v-container>
@@ -139,7 +139,7 @@
 					:key="index"
 					:class="image.width";
 				>
-					<v-img :src="image.src" :alt="image.alt" />
+				<v-img :src="image.src" :alt="image.alt" />
 				</v-carousel-item>
 			</v-carousel>
 		</v-container>
