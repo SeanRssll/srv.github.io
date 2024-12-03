@@ -30,7 +30,8 @@
 		$(".fadein").fadeIn(2000);
 		$(".showitems").show(3000);
 		$(window).scroll(function() {
-			console.log($(window).width());
+			// console.log($(window).scrollTop());
+			// console.log($(window).width());
 		if ($(window).scrollTop() >=50) {
 			$(".aboutMe").show(2000);
 		}if ($(window).scrollTop() >=400) {
@@ -52,6 +53,9 @@
 		}if ($(window).scrollTop() >= 1800) {
 			$(".project").fadeIn(200);
 		}
+		if ($(window).scrollTop() >= 2400) {
+			$(".other").fadeIn(200);
+		}
 		});
 	// animation end
 	// css-class start
@@ -64,6 +68,7 @@
 			$(".skilltitle").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 			$(".mycert").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 			$(".project").removeClass("text-h3").addClass("text-h4").css("text-align","center");
+			$(".other").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 		}else{
 			$(".introContent").addClass("text-h6").removeClass("text-h7");
 			$(".introTitle").addClass("text-h3").removeClass("text-h4");
@@ -73,6 +78,7 @@
 			$(".skilltitle").addClass("text-h3").removeClass("text-h4").css("text-align","center");
 			$(".mycert").addClass("text-h3").removeClass("text-h4").css("text-align","center");
 			$(".project").removeClass("text-h3").addClass("text-h4").css("text-align","center");
+			$(".other").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 		}
 		// css-class end
 	});

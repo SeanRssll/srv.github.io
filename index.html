@@ -48,11 +48,17 @@
 					        @click="scrollToContainer('mycertificate')"
 					      >Certificates
 					      </v-btn>
-						  <v-btn
+						  	<v-btn
 					        outlined
 					        text
 					        @click="scrollToContainer('myprojects')"
 					      >Projects
+					      </v-btn>
+					      <v-btn
+					        outlined
+					        text
+					        @click="scrollToContainer('other')"
+					      >Other
 					      </v-btn>
 					    </v-card-actions>
 					  </v-card>
@@ -168,6 +174,17 @@
 					<v-img :src="projects.src" :alt="projects.alt" />
 					</v-carousel-item>
 				</v-carousel>
+			</v-container>
+		</v-container>
+
+		<v-container id="other">
+			<v-container class="other">
+				<p>
+					OTHER
+				</p>
+				<v-row>
+					<v-col><iframe src="typography.html" class="iframe"></iframe></v-col>
+				</v-row>
 			</v-container>
 		</v-container>
 		

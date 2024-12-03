@@ -11,6 +11,7 @@
                 { src: 'image/portfolio/online_exam.png',width:"carousel-image-portfolio"},
                 { src: 'image/portfolio/online_exam1.png',width:"carousel-image-portfolio"},
                 { src: 'image/portfolio/online_exam2.png',width:"carousel-image-portfolio"},
+                { src: 'image/portfolio/dashboard.png',width:"carousel-image-portfolio"},
                 
             ],
 			certImages: [

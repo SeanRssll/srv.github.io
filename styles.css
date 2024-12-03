@@ -24,7 +24,12 @@
 		.c1{
 			height: 100px;
 		}
-		
+		.iframe{
+			width: 100%;
+			height: 100vh;
+			border:0px;
+		}
+		.other,
 		.project,
 		.mycert,
 		.showitems, 
