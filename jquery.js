@@ -36,6 +36,7 @@
 			$(".aboutMe").show(2000);
 		}if ($(window).scrollTop() >=400) {
 			$(".skillTitle").fadeIn(2000);
+			$(".skillcontent").fadeIn(2000);
 			$(".skillsTitle1").delay(200).show(200);
 			$(".skillsTitle2").delay(400).show(200);
 			$(".skillsTitle3").delay(600).show(200);
@@ -66,9 +67,11 @@
 			$(".aboutMeContentTitle").removeClass("text-h3").addClass("text-h4");
 			$(".avatarSize").width("60vw").height("60vw");
 			$(".skilltitle").removeClass("text-h3").addClass("text-h4").css("text-align","center");
+			$(".skillcontent").removeClass("text-h6").addClass("text-h7").css("text-align","center");;
 			$(".mycert").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 			$(".project").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 			$(".other").removeClass("text-h3").addClass("text-h4").css("text-align","center");
+			$(".othercontent").removeClass("text-h6").addClass("text-h7").css("text-align","center");;
 		}else{
 			$(".introContent").addClass("text-h6").removeClass("text-h7");
 			$(".introTitle").addClass("text-h3").removeClass("text-h4");
@@ -76,9 +79,11 @@
 			$(".aboutMeContentTitle").addClass("text-h3").removeClass("text-h4");
 			$(".avatarSize").width("35vw").height("35vw");
 			$(".skilltitle").addClass("text-h3").removeClass("text-h4").css("text-align","center");
+			$(".skillcontent").addClass("text-h6").removeClass("text-h7").css("text-align","center");;
 			$(".mycert").addClass("text-h3").removeClass("text-h4").css("text-align","center");
 			$(".project").removeClass("text-h3").addClass("text-h4").css("text-align","center");
 			$(".other").removeClass("text-h3").addClass("text-h4").css("text-align","center");
+			$(".othercontent").addClass("text-h6").removeClass("text-h7").css("text-align","center");;
 		}
 		// css-class end
 	});

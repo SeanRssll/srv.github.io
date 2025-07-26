@@ -57,7 +57,7 @@
 					      <v-btn
 					        outlined
 					        text
-					        @click="scrollToContainer('other')"
+					        @click="scrollToContainer('otherContainer')"
 					      >Other
 					      </v-btn>
 					    </v-card-actions>
@@ -108,6 +108,9 @@
 		<v-container class="skillContainer" justify="center">
 			<p class="skillTitle">
 			    MY SKILLS
+			</p>
+			<p class="skillcontent">
+				click the icons below to see each levels
 			</p>
 			<v-row class="skill_list">
 				<v-col 
@@ -177,14 +180,14 @@
 			</v-container>
 		</v-container>
 
-		<v-container id="other">
+		<v-container id="otherContainer">
 			<v-container class="other">
 				<p>
 					OTHER
 				</p>
-				<h4>
+				<p class="othercontent">
 					Please refresh the page to see the typography
-				</h4>
+				</p>
 				<v-row>
 					<v-col><iframe src="typography.html" class="iframe"></iframe></v-col>
 				</v-row>

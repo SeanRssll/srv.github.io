@@ -34,7 +34,8 @@
 		.mycert,
 		.showitems, 
 		.fadein,
-		.skillTitle, 
+		.skillTitle,
+		.skillcontent,
 		.aboutMe{
 			display: none;
 		}
